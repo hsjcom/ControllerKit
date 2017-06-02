@@ -15,6 +15,10 @@
 		B22763A81EE15F2100BF69B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22763A61EE15F2100BF69B7 /* LaunchScreen.storyboard */; };
 		B22763B31EE15F2100BF69B7 /* ControllerKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763B21EE15F2100BF69B7 /* ControllerKitDemoTests.m */; };
 		B22763BE1EE15F2100BF69B7 /* ControllerKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */; };
+		B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763CD1EE1606A00BF69B7 /* HBViewController.m */; };
+		B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D21EE1643C00BF69B7 /* UIView+Extension.m */; };
+		B22763D71EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D51EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		B22763DB1EE16E1D00BF69B7 /* HBModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,16 @@
 		B22763B91EE15F2100BF69B7 /* ControllerKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerKitDemoUITests.m; sourceTree = "<group>"; };
 		B22763BF1EE15F2100BF69B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22763CC1EE1606A00BF69B7 /* HBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
+		B22763CD1EE1606A00BF69B7 /* HBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
+		B22763D01EE1643C00BF69B7 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B22763D11EE1643C00BF69B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B22763D21EE1643C00BF69B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B22763D41EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		B22763D51EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		B22763D81EE1647F00BF69B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B22763D91EE16E1D00BF69B7 /* HBModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBModelViewController.h; sourceTree = "<group>"; };
+		B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBModelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B22763991EE15F2100BF69B7 /* main.m */,
+				B22763D81EE1647F00BF69B7 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,8 +159,33 @@
 		B22763CB1EE15F8F00BF69B7 /* ControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				B22763CF1EE1643C00BF69B7 /* Common */,
+				B22763D31EE1643C00BF69B7 /* Vendor */,
+				B22763CC1EE1606A00BF69B7 /* HBViewController.h */,
+				B22763CD1EE1606A00BF69B7 /* HBViewController.m */,
+				B22763D91EE16E1D00BF69B7 /* HBModelViewController.h */,
+				B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */,
 			);
 			path = ControllerKit;
+			sourceTree = "<group>";
+		};
+		B22763CF1EE1643C00BF69B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B22763D01EE1643C00BF69B7 /* Constant.h */,
+				B22763D11EE1643C00BF69B7 /* UIView+Extension.h */,
+				B22763D21EE1643C00BF69B7 /* UIView+Extension.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B22763D31EE1643C00BF69B7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B22763D41EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.h */,
+				B22763D51EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22763D71EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */,
+				B22763DB1EE16E1D00BF69B7 /* HBModelViewController.m in Sources */,
 				B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */,
 				B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */,
+				B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */,
 				B227639A1EE15F2100BF69B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 99B27783N7;
+				GCC_PREFIX_HEADER = ControllerKitDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ControllerKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Soldier.ControllerKitDemo;
@@ -450,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 99B27783N7;
+				GCC_PREFIX_HEADER = ControllerKitDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = ControllerKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Soldier.ControllerKitDemo;
