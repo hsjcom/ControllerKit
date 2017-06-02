@@ -22,6 +22,13 @@ typedef NS_ENUM(NSInteger, PullLoadType) {
     PullUpLoadMore  = 2,
 };
 
+
 @interface HBModelViewController : HBViewController
+
+
+/**
+ 数据源items
+ */
+@property(nonatomic, strong) NSMutableArray *items;
 
 @end

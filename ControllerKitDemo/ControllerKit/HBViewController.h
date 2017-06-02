@@ -13,7 +13,7 @@
 /**
  Push Controller 参数
  */
-@property (nonatomic, strong) NSDictionary *query;
+@property(nonatomic, strong) NSDictionary *query;
 
 /**
  是否主Controller 
