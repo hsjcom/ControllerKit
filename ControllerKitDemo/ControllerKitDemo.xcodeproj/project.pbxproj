@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B200D8B81EE57C2500C47DF6 /* HBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8B71EE57C2500C47DF6 /* HBTableViewController.m */; };
+		B200D8BB1EE57CEB00C47DF6 /* HBTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8BA1EE57CEB00C47DF6 /* HBTableViewDataSource.m */; };
+		B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C11EE57E9A00C47DF6 /* HBModel.m */; };
+		B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C31EE57E9A00C47DF6 /* HBModelViewController.m */; };
+		B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C71EE57EC500C47DF6 /* HBLayout.m */; };
 		B227639A1EE15F2100BF69B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763991EE15F2100BF69B7 /* main.m */; };
 		B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639C1EE15F2100BF69B7 /* AppDelegate.m */; };
 		B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639F1EE15F2100BF69B7 /* ViewController.m */; };
@@ -18,7 +23,6 @@
 		B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763CD1EE1606A00BF69B7 /* HBViewController.m */; };
 		B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D21EE1643C00BF69B7 /* UIView+Extension.m */; };
 		B22763D71EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D51EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		B22763DB1EE16E1D00BF69B7 /* HBModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B200D8B61EE57C2500C47DF6 /* HBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTableViewController.h; sourceTree = "<group>"; };
+		B200D8B71EE57C2500C47DF6 /* HBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewController.m; sourceTree = "<group>"; };
+		B200D8B91EE57CEB00C47DF6 /* HBTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTableViewDataSource.h; sourceTree = "<group>"; };
+		B200D8BA1EE57CEB00C47DF6 /* HBTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewDataSource.m; sourceTree = "<group>"; };
+		B200D8C01EE57E9A00C47DF6 /* HBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBModel.h; sourceTree = "<group>"; };
+		B200D8C11EE57E9A00C47DF6 /* HBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBModel.m; sourceTree = "<group>"; };
+		B200D8C21EE57E9A00C47DF6 /* HBModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBModelViewController.h; sourceTree = "<group>"; };
+		B200D8C31EE57E9A00C47DF6 /* HBModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBModelViewController.m; sourceTree = "<group>"; };
+		B200D8C61EE57EC500C47DF6 /* HBLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLayout.h; sourceTree = "<group>"; };
+		B200D8C71EE57EC500C47DF6 /* HBLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLayout.m; sourceTree = "<group>"; };
 		B22763951EE15F2100BF69B7 /* ControllerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763991EE15F2100BF69B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B227639B1EE15F2100BF69B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,8 +77,6 @@
 		B22763D41EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		B22763D51EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		B22763D81EE1647F00BF69B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		B22763D91EE16E1D00BF69B7 /* HBModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBModelViewController.h; sourceTree = "<group>"; };
-		B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBModelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B200D8B51EE57BEC00C47DF6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B200D8B61EE57C2500C47DF6 /* HBTableViewController.h */,
+				B200D8B71EE57C2500C47DF6 /* HBTableViewController.m */,
+				B200D8B91EE57CEB00C47DF6 /* HBTableViewDataSource.h */,
+				B200D8BA1EE57CEB00C47DF6 /* HBTableViewDataSource.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		B200D8BF1EE57E9A00C47DF6 /* HBModel */ = {
+			isa = PBXGroup;
+			children = (
+				B200D8C01EE57E9A00C47DF6 /* HBModel.h */,
+				B200D8C11EE57E9A00C47DF6 /* HBModel.m */,
+				B200D8C21EE57E9A00C47DF6 /* HBModelViewController.h */,
+				B200D8C31EE57E9A00C47DF6 /* HBModelViewController.m */,
+				B200D8C61EE57EC500C47DF6 /* HBLayout.h */,
+				B200D8C71EE57EC500C47DF6 /* HBLayout.m */,
+			);
+			path = HBModel;
+			sourceTree = "<group>";
+		};
 		B227638C1EE15F2100BF69B7 = {
 			isa = PBXGroup;
 			children = (
@@ -159,12 +195,12 @@
 		B22763CB1EE15F8F00BF69B7 /* ControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				B200D8BF1EE57E9A00C47DF6 /* HBModel */,
+				B200D8B51EE57BEC00C47DF6 /* TableView */,
 				B22763CF1EE1643C00BF69B7 /* Common */,
 				B22763D31EE1643C00BF69B7 /* Vendor */,
 				B22763CC1EE1606A00BF69B7 /* HBViewController.h */,
 				B22763CD1EE1606A00BF69B7 /* HBViewController.m */,
-				B22763D91EE16E1D00BF69B7 /* HBModelViewController.h */,
-				B22763DA1EE16E1D00BF69B7 /* HBModelViewController.m */,
 			);
 			path = ControllerKit;
 			sourceTree = "<group>";
@@ -324,13 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */,
+				B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */,
 				B22763D71EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */,
-				B22763DB1EE16E1D00BF69B7 /* HBModelViewController.m in Sources */,
+				B200D8B81EE57C2500C47DF6 /* HBTableViewController.m in Sources */,
 				B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */,
 				B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */,
+				B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */,
 				B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */,
 				B227639A1EE15F2100BF69B7 /* main.m in Sources */,
+				B200D8BB1EE57CEB00C47DF6 /* HBTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +612,7 @@
 				B22763C41EE15F2100BF69B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B22763C51EE15F2100BF69B7 /* Build configuration list for PBXNativeTarget "ControllerKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +621,7 @@
 				B22763C71EE15F2100BF69B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B22763C81EE15F2100BF69B7 /* Build configuration list for PBXNativeTarget "ControllerKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +630,7 @@
 				B22763CA1EE15F2100BF69B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
