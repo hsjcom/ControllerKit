@@ -15,7 +15,11 @@
 @implementation HBViewController
 
 - (void)dealloc {
+    /*
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+     */
 }
 
 - (id)initWithQuery:(NSDictionary *)query {

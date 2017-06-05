@@ -10,6 +10,8 @@
 
 @interface HBViewController : UIViewController
 
+- (id)initWithQuery:(NSDictionary *)query;
+
 /**
  Push Controller 参数
  */
@@ -33,6 +35,18 @@
 - (void)backView;
 
 - (void)backView:(BOOL)animated;
+
+- (UIColor *)backgroundColor;
+    
+/**
+ 导航栏左边按钮
+ */
+- (void)addNavLeftBtn:(UIView *)btn;
+
+/**
+ 导航栏右边按钮
+ */
+- (void)addNavRightBtn:(UIView *)btn;
 
 
 @end
