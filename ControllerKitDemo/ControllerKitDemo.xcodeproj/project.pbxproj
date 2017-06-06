@@ -12,6 +12,7 @@
 		B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C11EE57E9A00C47DF6 /* HBModel.m */; };
 		B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C31EE57E9A00C47DF6 /* HBModelViewController.m */; };
 		B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8C71EE57EC500C47DF6 /* HBLayout.m */; };
+		B200D8E41EE6DE9400C47DF6 /* HBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D8E31EE6DE9400C47DF6 /* HBTableViewCell.m */; };
 		B227639A1EE15F2100BF69B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763991EE15F2100BF69B7 /* main.m */; };
 		B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639C1EE15F2100BF69B7 /* AppDelegate.m */; };
 		B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639F1EE15F2100BF69B7 /* ViewController.m */; };
@@ -53,6 +54,8 @@
 		B200D8C31EE57E9A00C47DF6 /* HBModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBModelViewController.m; sourceTree = "<group>"; };
 		B200D8C61EE57EC500C47DF6 /* HBLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLayout.h; sourceTree = "<group>"; };
 		B200D8C71EE57EC500C47DF6 /* HBLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLayout.m; sourceTree = "<group>"; };
+		B200D8E21EE6DE9400C47DF6 /* HBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTableViewCell.h; sourceTree = "<group>"; };
+		B200D8E31EE6DE9400C47DF6 /* HBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewCell.m; sourceTree = "<group>"; };
 		B22763951EE15F2100BF69B7 /* ControllerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763991EE15F2100BF69B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B227639B1EE15F2100BF69B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				B200D8B71EE57C2500C47DF6 /* HBTableViewController.m */,
 				B200D8B91EE57CEB00C47DF6 /* HBTableViewDataSource.h */,
 				B200D8BA1EE57CEB00C47DF6 /* HBTableViewDataSource.m */,
+				B200D8E21EE6DE9400C47DF6 /* HBTableViewCell.h */,
+				B200D8E31EE6DE9400C47DF6 /* HBTableViewCell.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */,
+				B200D8E41EE6DE9400C47DF6 /* HBTableViewCell.m in Sources */,
 				B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */,
 				B22763D71EE1643C00BF69B7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */,

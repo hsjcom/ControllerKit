@@ -26,5 +26,22 @@
 
 @interface HBTableViewDataSource : NSObject <HBTableViewDataSource>
 
+@property(nonatomic, strong) NSMutableArray *items;
+@property(nonatomic, strong) NSMutableArray *sectionsItems;
+
+
++ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items andLayout:(id)layout;
+
++ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items separateItem:(id)separateItem andLayout:(id)layout;
+
+/**
+ * numberOfSectionsInTableView = 1
+ */
++ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items;
+
+/**
+ * numberOfSectionsInTableView > 1
+ */
++ (HBTableViewDataSource *)dataSourceWithSectionsItems:(NSMutableArray *)items;
 
 @end
