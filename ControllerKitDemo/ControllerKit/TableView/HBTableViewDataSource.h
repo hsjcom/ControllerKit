@@ -30,10 +30,6 @@
 @property(nonatomic, strong) NSMutableArray *sectionsItems;
 
 
-+ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items andLayout:(id)layout;
-
-+ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items separateItem:(id)separateItem andLayout:(id)layout;
-
 /**
  * numberOfSectionsInTableView = 1
  */

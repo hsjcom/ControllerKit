@@ -47,29 +47,6 @@
     return [[self alloc] initWithItems:items];
 }
 
-/*
- * 适用于上面为items，下面为layout的数据格式
- */
-+ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items andLayout:(id)layout {
-    NSMutableArray *tempItems = [NSMutableArray array];
-    [tempItems addObjectsFromArray:items];
-    [self addToArray:tempItems value:layout];
-    
-    return [[self alloc] initWithItems:tempItems];
-}
-
-/*
- * 适用于上面为items，中间特殊ietm，下面为layout的数据格式
- */
-+ (HBTableViewDataSource *)dataSourceWithItems:(NSMutableArray *)items separateItem:(id)separateItem andLayout:(id)layout {
-    NSMutableArray *tempItems = [NSMutableArray array];
-    [tempItems addObjectsFromArray:items];
-    [self addToArray:tempItems value:separateItem];
-    [self addToArray:tempItems value:layout];
-    
-    return [[self alloc] initWithItems:tempItems];
-}
-
 /**
  * numberOfSectionsInTableView = 1
  */
