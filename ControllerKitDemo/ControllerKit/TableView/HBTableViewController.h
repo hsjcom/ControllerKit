@@ -17,13 +17,9 @@
 @property(nonatomic, assign) NSInteger newItemsCount;
 @property(nonatomic, assign) int page;
 /**
- 能否上拉更多 default YES
+ 能否继续上拉更多 default YES
  */
 @property(nonatomic, assign) BOOL loadMoreEnable;
-/**
- 能否下拉刷新 default YES
- */
-@property(nonatomic, assign) BOOL loadRefreshEnable;
 
 
 #pragma mark - TableView
@@ -48,6 +44,16 @@
 
 
 #pragma mark - Load
+
+/**
+ 是否开启下拉刷新 default YES
+ */
+- (BOOL)canLoadRefreshEnable;
+
+/**
+ 是否开启上拉更多 default YES
+ */
+- (BOOL)canLoadMoreEnable;
 
 /**
  自动下拉刷新

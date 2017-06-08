@@ -141,16 +141,16 @@
 #pragma mark - 下拉刷新 & 上拉更多
 
 /**
- 能否下拉刷新 default YES
+ 是否开启下拉刷新 default YES
  */
-- (BOOL)loadRefreshEnable {
+- (BOOL)canLoadRefreshEnable {
     return YES;
 }
 
 /**
- 能否上拉更多 default YES
+ 是否开启上拉更多 default YES
  */
-- (BOOL)loadMoreEnable {
+- (BOOL)canLoadMoreEnable {
     return YES;
 }
 
@@ -158,13 +158,15 @@
     __weak __typeof(self) weakSelf = self;
     
     //下拉刷新
-    if (self.loadRefreshEnable) {
+    if (self.canLoadRefreshEnable) {
         self.tableView.mj_header = [HBRefreshHeader headerWithRefreshingBlock:^{
             [weakSelf loadNewData];
         }];
     }
     
-    if (self.loadMoreEnable) {
+    if (self.canLoadMoreEnable) {
+        self.loadMoreEnable = YES;
+        
         //上拉更多
         HBRefreshFooter *footer = [HBRefreshFooter footerWithRefreshingBlock:^{
             [weakSelf loadMoreData];
@@ -290,12 +292,12 @@
  */
 - (void)handleWhenLessOnePage {
     /*
-     if (self.items.count < limitSize || self.newItemsCount <= 0) {
-     self.loadMoreEnable = NO;
-     } else{
-     self.loadMoreEnable = NO;
-     }
-     */
+    if (self.items.count < limitSize || self.newItemsCount <= 0) {
+        self.loadMoreEnable = NO;
+    } else{
+        self.loadMoreEnable = YES;
+    }
+    */
 }
 
 /**

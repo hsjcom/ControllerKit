@@ -84,8 +84,9 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.sectionsItems.count > 0) {
         /**
-         *因数据结构差异，需在子类重写
-         * eg: CategoryItem *item = [self.sectionsItems objectAtIndex:section];
+         因数据结构差异，需在子类重写
+         eg:
+         CategoryItem *item = [self.sectionsItems objectAtIndex:section];
          return [item.dataArray count];
          */
         
@@ -115,7 +116,7 @@
     }
     
     // 目前没有用到
-    //    [self tableView:tableView cell:cell willAppearAtIndexPath:indexPath];
+//    [self tableView:tableView cell:cell willAppearAtIndexPath:indexPath];
     
     return cell;
 }
@@ -131,13 +132,14 @@
     if (self.sectionsItems.count > 0) {
         if (indexPath.section < self.sectionsItems.count) {
             /**
-             *因数据结构差异，需在子类重写
-             * eg: id obj = [self.sectionsItems objectAtIndex:(NSUInteger) indexPath.section];
+             因数据结构差异，需在子类重写
+             eg:
+             id obj = [self.sectionsItems objectAtIndex:(NSUInteger) indexPath.section];
              if ([obj isKindOfClass:[CategoryItem class]]) {
-             CategoryItem *item = (CategoryItem *)obj;
-             if (indexPath.row < item.dataArray.count) {
-             return [item.dataArray objectAtIndex:(NSUInteger) indexPath.row];
-             }
+                 CategoryItem *item = (CategoryItem *)obj;
+                 if (indexPath.row < item.dataArray.count) {
+                     return [item.dataArray objectAtIndex:(NSUInteger) indexPath.row];
+                 }
              }
              */
             
