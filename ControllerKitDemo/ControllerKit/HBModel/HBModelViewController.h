@@ -37,12 +37,21 @@ typedef NS_ENUM(NSInteger, PullLoadType) {
 
 - (void)createModel;
 
-- (void)didFinishLoad:(id)request;
+/**
+ model Did Start
+ 处理Loading 等
+ */
+- (void)modelDidStartLoad;
 
-- (void)didFailLoadWithError:(id)request;
-
+/**
+ model 请求完成
+ 处理数据解析 等
+ */
 - (void)modelDidFinishLoad:(id)request;
 
+/**
+ model 请求失败
+ */
 - (void)modeldidFailLoadWithError:(id)request;
 
 /**
