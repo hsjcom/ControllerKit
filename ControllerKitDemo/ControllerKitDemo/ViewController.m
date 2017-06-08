@@ -63,9 +63,20 @@
     [self createData];
 }
 
+- (void)handleWhenLessOnePage {
+     if (self.items.count >= 60) {
+         self.loadMoreEnable = NO;
+     } else {
+         self.loadMoreEnable = YES;
+     }
+}
+
 - (void)createData {
+    CGFloat after = 0.2;
+    
     if (self.pullLoadType == PullDownRefresh) {
         [self.items removeAllObjects];
+        after = 0.62;
     }
     
     for (int i = 0; i < 10; i++) {
@@ -79,7 +90,7 @@
         }
     }
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(after * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self onDataUpdated];
     });
 }
