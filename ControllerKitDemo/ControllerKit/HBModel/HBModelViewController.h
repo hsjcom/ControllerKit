@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, PullLoadType) {
 
 - (void)didFailLoadWithError:(id)request;
 
-- (void)modelDidFinishLoad:(id)reques;
+- (void)modelDidFinishLoad:(id)request;
 
 - (void)modeldidFailLoadWithError:(id)request;
 

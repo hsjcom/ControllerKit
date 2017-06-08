@@ -10,10 +10,14 @@
 #import "HBTableViewCell.h"
 #import "HBLayout.h"
 #import "MJRefresh.h"
+#import "HBRefreshFooter.h"
+#import "HBRefreshHeader.h"
+
 
 @interface HBTableViewController ()
 
 @end
+
 
 @implementation HBTableViewController
 
@@ -155,21 +159,16 @@
     
     //下拉刷新
     if (self.loadRefreshEnable) {
-        self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.tableView.mj_header = [HBRefreshHeader headerWithRefreshingBlock:^{
             [weakSelf loadNewData];
         }];
     }
     
     if (self.loadMoreEnable) {
         //上拉更多
-        MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        HBRefreshFooter *footer = [HBRefreshFooter footerWithRefreshingBlock:^{
             [weakSelf loadMoreData];
         }];
-        
-        [footer setTitle:@"Click or drag up to refresh" forState:MJRefreshStateIdle];
-        [footer setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
-        [footer setTitle:@"- END -" forState:MJRefreshStateNoMoreData];
-        footer.stateLabel.font = [UIFont systemFontOfSize:17];
         
         self.tableView.mj_footer = footer;
     }
@@ -214,9 +213,7 @@
  结束下拉刷新
  */
 - (void)endRefresh {
-    if (self.pullLoadType != PullUpLoadMore) {
-        self.pullLoadType = PullDefault;
-    }
+    self.pullLoadType = PullDefault;
     if (self.tableView.mj_header) {
         [self.tableView.mj_header endRefreshing];
     }
@@ -234,7 +231,7 @@
 - (void)endLoadMore {
     self.pullLoadType = PullDefault;
     if (self.tableView.mj_footer) {
-        if (self.loadMoreEnable) {
+        if (!self.loadMoreEnable) {
             [self.tableView.mj_footer endRefreshingWithNoMoreData];
         } else {
             [self.tableView.mj_footer endRefreshing];
@@ -306,6 +303,16 @@
  */
 - (void)handleWhenNoneData {
     
+}
+
+- (void)modelDidFinishLoad:(id)request {
+    /*
+    if (self.pullLoadType == PullDownRefresh) {
+        [self.items removeAllObjects];
+    }
+    
+     数据解析
+     */
 }
 
 @end
