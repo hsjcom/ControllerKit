@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HBTableViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : HBTableViewController
 
 
 @end
