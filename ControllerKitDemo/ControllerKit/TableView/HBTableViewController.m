@@ -26,6 +26,8 @@
     [_tableView setDataSource:nil];
     _dataSource = nil;
     _tableView = nil;
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 - (id)initWithQuery:(NSDictionary *)query {
