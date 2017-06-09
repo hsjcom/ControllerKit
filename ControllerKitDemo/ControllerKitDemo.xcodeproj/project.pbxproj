@@ -50,6 +50,7 @@
 		B200D98E1EEA6E0700C47DF6 /* HBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9821EEA6E0700C47DF6 /* HBTableViewCell.m */; };
 		B200D98F1EEA6E0700C47DF6 /* HBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9841EEA6E0700C47DF6 /* HBTableViewController.m */; };
 		B200D9901EEA6E0700C47DF6 /* HBTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9861EEA6E0700C47DF6 /* HBTableViewDataSource.m */; };
+		B200D9941EEA6EB900C47DF6 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9931EEA6EB900C47DF6 /* HBViewController.m */; };
 		B227639A1EE15F2100BF69B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763991EE15F2100BF69B7 /* main.m */; };
 		B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639C1EE15F2100BF69B7 /* AppDelegate.m */; };
 		B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639F1EE15F2100BF69B7 /* ViewController.m */; };
@@ -58,7 +59,6 @@
 		B22763A81EE15F2100BF69B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22763A61EE15F2100BF69B7 /* LaunchScreen.storyboard */; };
 		B22763B31EE15F2100BF69B7 /* ControllerKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763B21EE15F2100BF69B7 /* ControllerKitDemoTests.m */; };
 		B22763BE1EE15F2100BF69B7 /* ControllerKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */; };
-		B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763CD1EE1606A00BF69B7 /* HBViewController.m */; };
 		B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D21EE1643C00BF69B7 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +160,8 @@
 		B200D9841EEA6E0700C47DF6 /* HBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewController.m; sourceTree = "<group>"; };
 		B200D9851EEA6E0700C47DF6 /* HBTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTableViewDataSource.h; sourceTree = "<group>"; };
 		B200D9861EEA6E0700C47DF6 /* HBTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewDataSource.m; sourceTree = "<group>"; };
+		B200D9921EEA6EB900C47DF6 /* HBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
+		B200D9931EEA6EB900C47DF6 /* HBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
 		B22763951EE15F2100BF69B7 /* ControllerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763991EE15F2100BF69B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B227639B1EE15F2100BF69B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -176,8 +178,6 @@
 		B22763B91EE15F2100BF69B7 /* ControllerKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerKitDemoUITests.m; sourceTree = "<group>"; };
 		B22763BF1EE15F2100BF69B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B22763CC1EE1606A00BF69B7 /* HBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
-		B22763CD1EE1606A00BF69B7 /* HBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
 		B22763D01EE1643C00BF69B7 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		B22763D11EE1643C00BF69B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		B22763D21EE1643C00BF69B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
@@ -384,6 +384,15 @@
 			path = HBTableView;
 			sourceTree = "<group>";
 		};
+		B200D9911EEA6EB900C47DF6 /* HBController */ = {
+			isa = PBXGroup;
+			children = (
+				B200D9921EEA6EB900C47DF6 /* HBViewController.h */,
+				B200D9931EEA6EB900C47DF6 /* HBViewController.m */,
+			);
+			path = HBController;
+			sourceTree = "<group>";
+		};
 		B227638C1EE15F2100BF69B7 = {
 			isa = PBXGroup;
 			children = (
@@ -453,14 +462,13 @@
 		B22763CB1EE15F8F00BF69B7 /* ControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				B200D9911EEA6EB900C47DF6 /* HBController */,
 				B200D9711EEA6E0700C47DF6 /* HBCollectionView */,
 				B200D9801EEA6E0700C47DF6 /* HBTableView */,
 				B200D93C1EE9233900C47DF6 /* HBRefresh */,
 				B200D8BF1EE57E9A00C47DF6 /* HBModel */,
 				B22763CF1EE1643C00BF69B7 /* Common */,
 				B22763D31EE1643C00BF69B7 /* Vendor */,
-				B22763CC1EE1606A00BF69B7 /* HBViewController.h */,
-				B22763CD1EE1606A00BF69B7 /* HBViewController.m */,
 				B200D9451EE950D400C47DF6 /* Resource */,
 			);
 			path = ControllerKit;
@@ -630,6 +638,7 @@
 			files = (
 				B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */,
 				B200D92E1EE8E96A00C47DF6 /* MJRefreshAutoNormalFooter.m in Sources */,
+				B200D9941EEA6EB900C47DF6 /* HBViewController.m in Sources */,
 				B200D98A1EEA6E0700C47DF6 /* HBCollectionViewFooterView.m in Sources */,
 				B200D9871EEA6E0700C47DF6 /* HBCollectionViewCell.m in Sources */,
 				B200D98C1EEA6E0700C47DF6 /* HBCollectionViewItem.m in Sources */,
@@ -661,7 +670,6 @@
 				B200D9281EE8E96A00C47DF6 /* MJRefreshAutoFooter.m in Sources */,
 				B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */,
 				B200D92C1EE8E96A00C47DF6 /* MJRefreshHeader.m in Sources */,
-				B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */,
 				B200D9351EE8E96A00C47DF6 /* MJRefreshStateHeader.m in Sources */,
 				B200D9391EE8E96A00C47DF6 /* UIScrollView+MJExtension.m in Sources */,
 				B200D9321EE8E96A00C47DF6 /* MJRefreshBackStateFooter.m in Sources */,
