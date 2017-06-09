@@ -45,9 +45,13 @@
 }
 
 - (void)setObject:(id)object {
-    if (!object) {
-        return;
+    /*
+    if (object != _object) {
+        _object = object;
+        
+        ...
     }
+     */
 }
 
 - (void)awakeFromNib {

@@ -31,8 +31,6 @@
 - (id)initWithQuery:(NSDictionary *)query {
     self = [super initWithQuery:query];
     if (self) {
-        self.page = 1;
-        self.pullLoadType = PullDefault;
     }
     return self;
 }
@@ -155,6 +153,9 @@
 }
 
 - (void)configRefresh {
+    self.page = 1;
+    self.pullLoadType = PullDefault;
+    
     __weak __typeof(self) weakSelf = self;
     
     //下拉刷新
