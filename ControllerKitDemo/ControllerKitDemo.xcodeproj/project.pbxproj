@@ -51,6 +51,8 @@
 		B200D98F1EEA6E0700C47DF6 /* HBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9841EEA6E0700C47DF6 /* HBTableViewController.m */; };
 		B200D9901EEA6E0700C47DF6 /* HBTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9861EEA6E0700C47DF6 /* HBTableViewDataSource.m */; };
 		B200D9941EEA6EB900C47DF6 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9931EEA6EB900C47DF6 /* HBViewController.m */; };
+		B200D9981EEA6FC100C47DF6 /* HBSlideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9971EEA6FC100C47DF6 /* HBSlideBarItem.m */; };
+		B200D99B1EEA711500C47DF6 /* HBSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D99A1EEA711500C47DF6 /* HBSlideBar.m */; };
 		B227639A1EE15F2100BF69B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763991EE15F2100BF69B7 /* main.m */; };
 		B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639C1EE15F2100BF69B7 /* AppDelegate.m */; };
 		B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639F1EE15F2100BF69B7 /* ViewController.m */; };
@@ -162,6 +164,10 @@
 		B200D9861EEA6E0700C47DF6 /* HBTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTableViewDataSource.m; sourceTree = "<group>"; };
 		B200D9921EEA6EB900C47DF6 /* HBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
 		B200D9931EEA6EB900C47DF6 /* HBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
+		B200D9961EEA6FC100C47DF6 /* HBSlideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlideBarItem.h; sourceTree = "<group>"; };
+		B200D9971EEA6FC100C47DF6 /* HBSlideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlideBarItem.m; sourceTree = "<group>"; };
+		B200D9991EEA711500C47DF6 /* HBSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlideBar.h; sourceTree = "<group>"; };
+		B200D99A1EEA711500C47DF6 /* HBSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlideBar.m; sourceTree = "<group>"; };
 		B22763951EE15F2100BF69B7 /* ControllerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763991EE15F2100BF69B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B227639B1EE15F2100BF69B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -393,6 +399,17 @@
 			path = HBController;
 			sourceTree = "<group>";
 		};
+		B200D9951EEA6F8500C47DF6 /* HBSlideBar */ = {
+			isa = PBXGroup;
+			children = (
+				B200D9961EEA6FC100C47DF6 /* HBSlideBarItem.h */,
+				B200D9971EEA6FC100C47DF6 /* HBSlideBarItem.m */,
+				B200D9991EEA711500C47DF6 /* HBSlideBar.h */,
+				B200D99A1EEA711500C47DF6 /* HBSlideBar.m */,
+			);
+			path = HBSlideBar;
+			sourceTree = "<group>";
+		};
 		B227638C1EE15F2100BF69B7 = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +479,7 @@
 		B22763CB1EE15F8F00BF69B7 /* ControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				B200D9951EEA6F8500C47DF6 /* HBSlideBar */,
 				B200D9911EEA6EB900C47DF6 /* HBController */,
 				B200D9711EEA6E0700C47DF6 /* HBCollectionView */,
 				B200D9801EEA6E0700C47DF6 /* HBTableView */,
@@ -660,6 +678,7 @@
 				B200D9901EEA6E0700C47DF6 /* HBTableViewDataSource.m in Sources */,
 				B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */,
 				B200D92A1EE8E96A00C47DF6 /* MJRefreshComponent.m in Sources */,
+				B200D9981EEA6FC100C47DF6 /* HBSlideBarItem.m in Sources */,
 				B200D9571EE954FF00C47DF6 /* HBRefreshHeader.m in Sources */,
 				B200D9881EEA6E0700C47DF6 /* HBCollectionViewController.m in Sources */,
 				B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */,
@@ -673,6 +692,7 @@
 				B200D9351EE8E96A00C47DF6 /* MJRefreshStateHeader.m in Sources */,
 				B200D9391EE8E96A00C47DF6 /* UIScrollView+MJExtension.m in Sources */,
 				B200D9321EE8E96A00C47DF6 /* MJRefreshBackStateFooter.m in Sources */,
+				B200D99B1EEA711500C47DF6 /* HBSlideBar.m in Sources */,
 				B200D98B1EEA6E0700C47DF6 /* HBCollectionViewHeaderView.m in Sources */,
 				B200D9371EE8E96A00C47DF6 /* MJRefreshConst.m in Sources */,
 				B227639A1EE15F2100BF69B7 /* main.m in Sources */,
