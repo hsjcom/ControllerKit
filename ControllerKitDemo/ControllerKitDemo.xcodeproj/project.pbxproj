@@ -43,6 +43,13 @@
 		B200D9541EE9514A00C47DF6 /* HBRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9531EE9514A00C47DF6 /* HBRefreshFooter.m */; };
 		B200D9571EE954FF00C47DF6 /* HBRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9561EE954FF00C47DF6 /* HBRefreshHeader.m */; };
 		B200D95A1EE9600100C47DF6 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9591EE9600100C47DF6 /* DemoCell.m */; };
+		B200D95E1EEA408B00C47DF6 /* HBCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D95D1EEA408B00C47DF6 /* HBCollectionViewLayout.m */; };
+		B200D9611EEA4BF000C47DF6 /* HBCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9601EEA4BF000C47DF6 /* HBCollectionViewItem.m */; };
+		B200D9641EEA4DF800C47DF6 /* HBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9631EEA4DF800C47DF6 /* HBCollectionViewCell.m */; };
+		B200D9671EEA510600C47DF6 /* HBCollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9661EEA510600C47DF6 /* HBCollectionViewHeaderView.m */; };
+		B200D96A1EEA51B200C47DF6 /* HBCollectionViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D9691EEA51B200C47DF6 /* HBCollectionViewFooterView.m */; };
+		B200D96D1EEA520D00C47DF6 /* HBCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D96C1EEA520D00C47DF6 /* HBCollectionViewDataSource.m */; };
+		B200D9701EEA53C700C47DF6 /* HBCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B200D96F1EEA53C700C47DF6 /* HBCollectionViewController.m */; };
 		B227639A1EE15F2100BF69B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763991EE15F2100BF69B7 /* main.m */; };
 		B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639C1EE15F2100BF69B7 /* AppDelegate.m */; };
 		B22763A01EE15F2100BF69B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227639F1EE15F2100BF69B7 /* ViewController.m */; };
@@ -139,6 +146,20 @@
 		B200D9561EE954FF00C47DF6 /* HBRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBRefreshHeader.m; sourceTree = "<group>"; };
 		B200D9581EE9600100C47DF6 /* DemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
 		B200D9591EE9600100C47DF6 /* DemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		B200D95C1EEA408B00C47DF6 /* HBCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewLayout.h; sourceTree = "<group>"; };
+		B200D95D1EEA408B00C47DF6 /* HBCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewLayout.m; sourceTree = "<group>"; };
+		B200D95F1EEA4BF000C47DF6 /* HBCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewItem.h; sourceTree = "<group>"; };
+		B200D9601EEA4BF000C47DF6 /* HBCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewItem.m; sourceTree = "<group>"; };
+		B200D9621EEA4DF800C47DF6 /* HBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewCell.h; sourceTree = "<group>"; };
+		B200D9631EEA4DF800C47DF6 /* HBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewCell.m; sourceTree = "<group>"; };
+		B200D9651EEA510600C47DF6 /* HBCollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewHeaderView.h; sourceTree = "<group>"; };
+		B200D9661EEA510600C47DF6 /* HBCollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewHeaderView.m; sourceTree = "<group>"; };
+		B200D9681EEA51B200C47DF6 /* HBCollectionViewFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewFooterView.h; sourceTree = "<group>"; };
+		B200D9691EEA51B200C47DF6 /* HBCollectionViewFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewFooterView.m; sourceTree = "<group>"; };
+		B200D96B1EEA520D00C47DF6 /* HBCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewDataSource.h; sourceTree = "<group>"; };
+		B200D96C1EEA520D00C47DF6 /* HBCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewDataSource.m; sourceTree = "<group>"; };
+		B200D96E1EEA53C700C47DF6 /* HBCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectionViewController.h; sourceTree = "<group>"; };
+		B200D96F1EEA53C700C47DF6 /* HBCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectionViewController.m; sourceTree = "<group>"; };
 		B22763951EE15F2100BF69B7 /* ControllerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22763991EE15F2100BF69B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B227639B1EE15F2100BF69B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -342,6 +363,27 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B200D95B1EE9816500C47DF6 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B200D95C1EEA408B00C47DF6 /* HBCollectionViewLayout.h */,
+				B200D95D1EEA408B00C47DF6 /* HBCollectionViewLayout.m */,
+				B200D95F1EEA4BF000C47DF6 /* HBCollectionViewItem.h */,
+				B200D9601EEA4BF000C47DF6 /* HBCollectionViewItem.m */,
+				B200D9621EEA4DF800C47DF6 /* HBCollectionViewCell.h */,
+				B200D9631EEA4DF800C47DF6 /* HBCollectionViewCell.m */,
+				B200D9651EEA510600C47DF6 /* HBCollectionViewHeaderView.h */,
+				B200D9661EEA510600C47DF6 /* HBCollectionViewHeaderView.m */,
+				B200D9681EEA51B200C47DF6 /* HBCollectionViewFooterView.h */,
+				B200D9691EEA51B200C47DF6 /* HBCollectionViewFooterView.m */,
+				B200D96B1EEA520D00C47DF6 /* HBCollectionViewDataSource.h */,
+				B200D96C1EEA520D00C47DF6 /* HBCollectionViewDataSource.m */,
+				B200D96E1EEA53C700C47DF6 /* HBCollectionViewController.h */,
+				B200D96F1EEA53C700C47DF6 /* HBCollectionViewController.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		B227638C1EE15F2100BF69B7 = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +456,7 @@
 				B200D93C1EE9233900C47DF6 /* HBRefresh */,
 				B200D8BF1EE57E9A00C47DF6 /* HBModel */,
 				B200D8B51EE57BEC00C47DF6 /* TableView */,
+				B200D95B1EE9816500C47DF6 /* CollectionView */,
 				B22763CF1EE1643C00BF69B7 /* Common */,
 				B22763D31EE1643C00BF69B7 /* Vendor */,
 				B22763CC1EE1606A00BF69B7 /* HBViewController.h */,
@@ -588,10 +631,12 @@
 				B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */,
 				B200D92E1EE8E96A00C47DF6 /* MJRefreshAutoNormalFooter.m in Sources */,
 				B200D92F1EE8E96A00C47DF6 /* MJRefreshAutoStateFooter.m in Sources */,
+				B200D95E1EEA408B00C47DF6 /* HBCollectionViewLayout.m in Sources */,
 				B200D93A1EE8E96A00C47DF6 /* UIScrollView+MJRefresh.m in Sources */,
 				B200D8E41EE6DE9400C47DF6 /* HBTableViewCell.m in Sources */,
 				B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */,
 				B200D9301EE8E96A00C47DF6 /* MJRefreshBackGifFooter.m in Sources */,
+				B200D9641EEA4DF800C47DF6 /* HBCollectionViewCell.m in Sources */,
 				B200D93B1EE8E96A00C47DF6 /* UIView+MJExtension.m in Sources */,
 				B200D9291EE8E96A00C47DF6 /* MJRefreshBackFooter.m in Sources */,
 				B200D92D1EE8E96A00C47DF6 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -605,12 +650,17 @@
 				B200D9571EE954FF00C47DF6 /* HBRefreshHeader.m in Sources */,
 				B227639D1EE15F2100BF69B7 /* AppDelegate.m in Sources */,
 				B200D9381EE8E96A00C47DF6 /* NSBundle+MJRefresh.m in Sources */,
+				B200D9671EEA510600C47DF6 /* HBCollectionViewHeaderView.m in Sources */,
 				B200D9341EE8E96A00C47DF6 /* MJRefreshNormalHeader.m in Sources */,
 				B200D9311EE8E96A00C47DF6 /* MJRefreshBackNormalFooter.m in Sources */,
 				B200D9541EE9514A00C47DF6 /* HBRefreshFooter.m in Sources */,
 				B200D9281EE8E96A00C47DF6 /* MJRefreshAutoFooter.m in Sources */,
+				B200D96D1EEA520D00C47DF6 /* HBCollectionViewDataSource.m in Sources */,
+				B200D9611EEA4BF000C47DF6 /* HBCollectionViewItem.m in Sources */,
+				B200D9701EEA53C700C47DF6 /* HBCollectionViewController.m in Sources */,
 				B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */,
 				B200D92C1EE8E96A00C47DF6 /* MJRefreshHeader.m in Sources */,
+				B200D96A1EEA51B200C47DF6 /* HBCollectionViewFooterView.m in Sources */,
 				B22763CE1EE1606A00BF69B7 /* HBViewController.m in Sources */,
 				B200D9351EE8E96A00C47DF6 /* MJRefreshStateHeader.m in Sources */,
 				B200D9391EE8E96A00C47DF6 /* UIScrollView+MJExtension.m in Sources */,
