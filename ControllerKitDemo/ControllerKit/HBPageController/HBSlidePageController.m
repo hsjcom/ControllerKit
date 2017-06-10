@@ -1,17 +1,17 @@
 //
 //  HBSlidePageController.m
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/4/1.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
+
 
 #import "HBSlidePageController.h"
 #import "HBSlidePageCell.h"
 #import <objc/runtime.h>
 
-@interface HBSlidePageController () {
-}
+@interface HBSlidePageController ()
 
 @end
 
@@ -20,6 +20,13 @@
 
 
 @implementation HBSlidePageController
+
+- (void)dealloc {
+    if (_mainColllectionView) {
+        _mainColllectionView.delegate = nil;
+        _mainColllectionView.dataSource = nil;
+    }
+}
 
 - (id)initWithQuery:(NSDictionary *)query{
     self = [super initWithQuery:query];
@@ -43,13 +50,6 @@
         if ([gesture isKindOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
             [self.mainColllectionView.panGestureRecognizer requireGestureRecognizerToFail:gesture];
         }
-    }
-}
-
-- (void)dealloc {
-    if (_mainColllectionView) {
-        _mainColllectionView.delegate = nil;
-        _mainColllectionView.dataSource = nil;
     }
 }
 
@@ -93,13 +93,13 @@
 }
 
 - (void)registerCellIdentifierForView:(UICollectionView *)collectionView cellClass:(Class)cellClass{
-    NSString *className = [StringUtil className:cellClass];
+    NSString *className = [self.class className:cellClass];
     [collectionView registerClass:cellClass forCellWithReuseIdentifier:className];
 }
 
-- (FDSlideBar *)slideBar {
+- (HBSlideBar *)slideBar {
     if (!_slideBar) {
-        _slideBar = [[FDSlideBar alloc] initWithFrameWithoutFadeLayer:[self slideBarFrame]];
+        _slideBar = [[HBSlideBar alloc] initWithFrameWithoutFadeLayer:[self slideBarFrame]];
         _slideBar.backgroundColor = [UIColor whiteColor];
         _slideBar.itemColor = COLOR_G2;
         _slideBar.itemSelectedColor = COLOR_G1;
@@ -108,7 +108,7 @@
         _slideBar.sliderHeight = 4;
         _slideBar.sliderView.clipsToBounds = YES;
         _slideBar.sliderView.layer.cornerRadius = 2;
-        WS(weakSelf);
+        __weak __typeof(self) weakSelf = self;
         [_slideBar slideBarItemSelectedCallback:^(NSUInteger idx) {
             if (weakSelf) {
                 [weakSelf pageIndex:idx]; //确保self.page 正确
@@ -152,8 +152,8 @@
     //这里设置生效
     _slideBar.itemColor = COLOR_G2;
     _slideBar.itemSelectedColor = COLOR_G1;
-    _slideBar.titleFont = [UIFont systemFontOfSize:FONT_T6];
-    _slideBar.titleSelectedFont = [UIFont systemFontOfSize:FONT_T6];
+    _slideBar.titleFont = [UIFont systemFontOfSize:14];
+    _slideBar.titleSelectedFont = [UIFont systemFontOfSize:14];
 }
 
 - (void)clickTapWithIndex:(NSInteger)index {
@@ -306,10 +306,6 @@
         }
         
         NSInteger pageIndex = item.pageIndex;
-        //二层slider的情况
-        if (item.needIndex) {
-            pageIndex = item.index;
-        }
         
         if (pageIndex == self.pageIndex) {
             return item;
@@ -367,24 +363,12 @@
     
     NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:0];
     for (HBSlidePageModel *item in self.model.items) {
-        //一层slider  保护
         if (![item isKindOfClass:[HBSlidePageModel class]]) {
             break;
         }
-              
-        if (!model.needIndex && !item.needIndex) {
-            if (model.pageIndex == item.pageIndex) {
-                [tempArray addObject:item];
-                break;
-            }
-        }
-        
-        //两层slider
-        else if (model.needIndex && item.needIndex) {
-            if (model.index == item.index) {
-                [tempArray addObject:item];
-                break;
-            }
+        if (item.pageIndex == model.pageIndex) {
+            [tempArray addObject:item];
+            break;
         }
     }
     [self.model.items removeObjectsInArray:tempArray];
@@ -480,6 +464,16 @@
         }
     }
 }
+
++ (NSString *)className:(Class)aClass {
+    const char *cName = object_getClassName(aClass);
+    NSString *sName = [[NSString alloc] initWithBytesNoCopy:(char *)cName
+                                                     length:strlen(cName)
+                                                   encoding:NSASCIIStringEncoding
+                                               freeWhenDone:NO];
+    return sName;
+}
+
 
 
 @end

@@ -1,9 +1,9 @@
 //
 //  HBTabListViewController.h
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/7/28.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
 
 /**
@@ -15,12 +15,15 @@
  */
 
 #import "HBTableViewController.h"
+#import "HBSlidePageModel.h"
+#import "HBSlideBar.h"
+#import "HBSlideTabItem.h"
 
 @interface HBTabListViewController : HBTableViewController
 
 @property (nonatomic, assign) NSInteger pageIndex;
 @property (nonatomic, strong) HBSlidePageModel *pageModel;
-@property (nonatomic, strong) FDSlideBar *slideBar;
+@property (nonatomic, strong) HBSlideBar *slideBar;
 @property (nonatomic, strong) NSMutableArray *tabItems;
 @property (nonatomic, strong) HBSlideTabItem *selectTabItem;
 

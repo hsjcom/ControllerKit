@@ -1,13 +1,12 @@
 //
 //  HBTabListViewController.m
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/7/28.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
 
 #import "HBTabListViewController.h"
-#import "ForumListModel.h"
 
 @interface HBTabListViewController ()
 
@@ -25,15 +24,15 @@
 
 #pragma mark - tabbar
 
-- (FDSlideBar *)slideBar {
+- (HBSlideBar *)slideBar {
     if (!_slideBar) {
-        _slideBar = [[FDSlideBar alloc] initWithFrame:[self slideBarFrame]];
+        _slideBar = [[HBSlideBar alloc] initWithFrame:[self slideBarFrame]];
         _slideBar.backgroundColor = [UIColor whiteColor];
-        _slideBar.itemColor = COLOR_TEXT_2;
-        _slideBar.itemSelectedColor = COLOR_TEXT_1;
+        _slideBar.itemColor = RGBCOLOR(115, 115, 115);
+        _slideBar.itemSelectedColor = RGBCOLOR(53, 53, 53);
         _slideBar.sliderColor = RGBCOLOR(255, 200, 17);
         _slideBar.sliderWidth = 35;
-        WS(weakSelf);
+        __weak __typeof(self) weakSelf = self;
         [_slideBar slideBarItemSelectedCallback:^(NSUInteger idx) {
             [weakSelf pageIndex:idx];
             [weakSelf clickTapWithIndex:idx];
@@ -41,7 +40,7 @@
         [self.view addSubview:_slideBar];
         
         UIView *liner = [[UIView alloc] initWithFrame:CGRectMake(0, _slideBar.height - 0.5, _slideBar.width, 0.5)];
-        liner.backgroundColor = COLOR_LINE_2;
+        liner.backgroundColor = RGBCOLOR(213, 213, 213);
         [_slideBar addSubview:liner];
     }
     return _slideBar;
@@ -69,8 +68,8 @@
     [self setupSlideBarTabs:_tabItems];
     
     //这里设置生效
-    _slideBar.itemColor = COLOR_TEXT_2;
-    _slideBar.itemSelectedColor = COLOR_TEXT_1;
+    _slideBar.itemColor = RGBCOLOR(115, 115, 115);
+    _slideBar.itemSelectedColor = RGBCOLOR(53, 53, 53);
 }
 
 - (void)clickTapWithIndex:(NSInteger)index {

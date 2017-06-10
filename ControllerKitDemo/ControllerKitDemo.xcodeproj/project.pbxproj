@@ -62,6 +62,12 @@
 		B22763B31EE15F2100BF69B7 /* ControllerKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763B21EE15F2100BF69B7 /* ControllerKitDemoTests.m */; };
 		B22763BE1EE15F2100BF69B7 /* ControllerKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */; };
 		B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D21EE1643C00BF69B7 /* UIView+Extension.m */; };
+		FB0B0BA81EEBDFD600FE6130 /* HBSlidePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0B9D1EEBDFD600FE6130 /* HBSlidePageCell.m */; };
+		FB0B0BA91EEBDFD600FE6130 /* HBSlidePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0B9F1EEBDFD600FE6130 /* HBSlidePageController.m */; };
+		FB0B0BAA1EEBDFD600FE6130 /* HBSlidePageItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0BA11EEBDFD600FE6130 /* HBSlidePageItemController.m */; };
+		FB0B0BAB1EEBDFD600FE6130 /* HBSlidePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0BA31EEBDFD600FE6130 /* HBSlidePageModel.m */; };
+		FB0B0BAC1EEBDFD600FE6130 /* HBSlideTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0BA51EEBDFD600FE6130 /* HBSlideTabItem.m */; };
+		FB0B0BAD1EEBDFD600FE6130 /* HBTabListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0BA71EEBDFD600FE6130 /* HBTabListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +194,18 @@
 		B22763D11EE1643C00BF69B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		B22763D21EE1643C00BF69B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		B22763D81EE1647F00BF69B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FB0B0B9C1EEBDFD600FE6130 /* HBSlidePageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageCell.h; sourceTree = "<group>"; };
+		FB0B0B9D1EEBDFD600FE6130 /* HBSlidePageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlidePageCell.m; sourceTree = "<group>"; };
+		FB0B0B9E1EEBDFD600FE6130 /* HBSlidePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageController.h; sourceTree = "<group>"; };
+		FB0B0B9F1EEBDFD600FE6130 /* HBSlidePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlidePageController.m; sourceTree = "<group>"; };
+		FB0B0BA01EEBDFD600FE6130 /* HBSlidePageItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageItemController.h; sourceTree = "<group>"; };
+		FB0B0BA11EEBDFD600FE6130 /* HBSlidePageItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlidePageItemController.m; sourceTree = "<group>"; };
+		FB0B0BA21EEBDFD600FE6130 /* HBSlidePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageModel.h; sourceTree = "<group>"; };
+		FB0B0BA31EEBDFD600FE6130 /* HBSlidePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlidePageModel.m; sourceTree = "<group>"; };
+		FB0B0BA41EEBDFD600FE6130 /* HBSlideTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlideTabItem.h; sourceTree = "<group>"; };
+		FB0B0BA51EEBDFD600FE6130 /* HBSlideTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlideTabItem.m; sourceTree = "<group>"; };
+		FB0B0BA61EEBDFD600FE6130 /* HBTabListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTabListViewController.h; sourceTree = "<group>"; };
+		FB0B0BA71EEBDFD600FE6130 /* HBTabListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTabListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,6 +497,7 @@
 		B22763CB1EE15F8F00BF69B7 /* ControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				FB0B0B9B1EEBDFD600FE6130 /* HBPageController */,
 				B200D9951EEA6F8500C47DF6 /* HBSlideBar */,
 				B200D9911EEA6EB900C47DF6 /* HBController */,
 				B200D9711EEA6E0700C47DF6 /* HBCollectionView */,
@@ -509,6 +528,25 @@
 				B200D8F81EE8E96A00C47DF6 /* MJRefresh */,
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		FB0B0B9B1EEBDFD600FE6130 /* HBPageController */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B0B9C1EEBDFD600FE6130 /* HBSlidePageCell.h */,
+				FB0B0B9D1EEBDFD600FE6130 /* HBSlidePageCell.m */,
+				FB0B0B9E1EEBDFD600FE6130 /* HBSlidePageController.h */,
+				FB0B0B9F1EEBDFD600FE6130 /* HBSlidePageController.m */,
+				FB0B0BA01EEBDFD600FE6130 /* HBSlidePageItemController.h */,
+				FB0B0BA11EEBDFD600FE6130 /* HBSlidePageItemController.m */,
+				FB0B0BA21EEBDFD600FE6130 /* HBSlidePageModel.h */,
+				FB0B0BA31EEBDFD600FE6130 /* HBSlidePageModel.m */,
+				FB0B0BA41EEBDFD600FE6130 /* HBSlideTabItem.h */,
+				FB0B0BA51EEBDFD600FE6130 /* HBSlideTabItem.m */,
+				FB0B0BA61EEBDFD600FE6130 /* HBTabListViewController.h */,
+				FB0B0BA71EEBDFD600FE6130 /* HBTabListViewController.m */,
+			);
+			path = HBPageController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,17 +692,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0B0BA81EEBDFD600FE6130 /* HBSlidePageCell.m in Sources */,
 				B200D8C51EE57E9A00C47DF6 /* HBModelViewController.m in Sources */,
 				B200D92E1EE8E96A00C47DF6 /* MJRefreshAutoNormalFooter.m in Sources */,
 				B200D9941EEA6EB900C47DF6 /* HBViewController.m in Sources */,
 				B200D98A1EEA6E0700C47DF6 /* HBCollectionViewFooterView.m in Sources */,
+				FB0B0BA91EEBDFD600FE6130 /* HBSlidePageController.m in Sources */,
 				B200D9871EEA6E0700C47DF6 /* HBCollectionViewCell.m in Sources */,
 				B200D98C1EEA6E0700C47DF6 /* HBCollectionViewItem.m in Sources */,
 				B200D9891EEA6E0700C47DF6 /* HBCollectionViewDataSource.m in Sources */,
 				B200D92F1EE8E96A00C47DF6 /* MJRefreshAutoStateFooter.m in Sources */,
 				B200D93A1EE8E96A00C47DF6 /* UIScrollView+MJRefresh.m in Sources */,
 				B200D8C81EE57EC500C47DF6 /* HBLayout.m in Sources */,
+				FB0B0BAC1EEBDFD600FE6130 /* HBSlideTabItem.m in Sources */,
 				B200D9301EE8E96A00C47DF6 /* MJRefreshBackGifFooter.m in Sources */,
+				FB0B0BAA1EEBDFD600FE6130 /* HBSlidePageItemController.m in Sources */,
+				FB0B0BAD1EEBDFD600FE6130 /* HBTabListViewController.m in Sources */,
 				B200D93B1EE8E96A00C47DF6 /* UIView+MJExtension.m in Sources */,
 				B200D9291EE8E96A00C47DF6 /* MJRefreshBackFooter.m in Sources */,
 				B200D92D1EE8E96A00C47DF6 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -692,6 +735,7 @@
 				B200D9351EE8E96A00C47DF6 /* MJRefreshStateHeader.m in Sources */,
 				B200D9391EE8E96A00C47DF6 /* UIScrollView+MJExtension.m in Sources */,
 				B200D9321EE8E96A00C47DF6 /* MJRefreshBackStateFooter.m in Sources */,
+				FB0B0BAB1EEBDFD600FE6130 /* HBSlidePageModel.m in Sources */,
 				B200D99B1EEA711500C47DF6 /* HBSlideBar.m in Sources */,
 				B200D98B1EEA6E0700C47DF6 /* HBCollectionViewHeaderView.m in Sources */,
 				B200D9371EE8E96A00C47DF6 /* MJRefreshConst.m in Sources */,

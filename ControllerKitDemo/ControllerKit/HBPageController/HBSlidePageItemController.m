@@ -1,9 +1,9 @@
 //
 //  HBSlidePageItemController.m
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/3/30.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
 
 #import "HBSlidePageItemController.h"
@@ -65,7 +65,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [super scrollViewDidScroll:scrollView];
-    if (scrollView == _tableView) {
+    if (scrollView == self.tableView) {
         CGFloat currentPostion = scrollView.contentOffset.y;
         if (currentPostion - _lastPositionY > 20 && currentPostion > 0) {
             _lastPositionY = currentPostion;
@@ -96,7 +96,7 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [super scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
     
-    if (scrollView == _tableView) {
+    if (scrollView == self.tableView) {
         CGPoint point = [scrollView.panGestureRecognizer translationInView:scrollView];
         CGFloat currentPostion = scrollView.contentOffset.y;
         if (point.y < 0) { //上滑
@@ -114,7 +114,7 @@
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    if (scrollView && scrollView == _tableView) {
+    if (scrollView && scrollView == self.tableView) {
         if (self.spDelegate && [self.spDelegate respondsToSelector:@selector(updateContentOffset:)]) {
             [self.spDelegate updateContentOffset:scrollView.contentOffset.y];
         }
@@ -129,10 +129,10 @@
 //    }
 //}
 
-- (void)beginPullDownRefreshing {
-    [super beginPullDownRefreshing];
-    if (self.spDelegate && [self.spDelegate respondsToSelector:@selector(itemControllBeginPullDownRefreshing)]) {
-        [self.spDelegate itemControllBeginPullDownRefreshing];
+- (void)loadNewData {
+    [super loadNewData];
+    if (self.spDelegate && [self.spDelegate respondsToSelector:@selector(itemControllLoadNewData)]) {
+        [self.spDelegate itemControllLoadNewData];
     }
 }
 

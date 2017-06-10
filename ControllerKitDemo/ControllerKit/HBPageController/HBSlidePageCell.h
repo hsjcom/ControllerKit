@@ -1,13 +1,14 @@
 //
 //  HBSlidePageCell.h
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/3/30.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
 
 #import "HBCollectionViewCell.h"
 #import "HBSlidePageItemController.h"
+#import "HBSlidePageModel.h"
 
 @interface HBSlidePageCell : UICollectionViewCell {
     HBSlidePageItemController *_controller;

@@ -1,14 +1,15 @@
 //
 //  HBSlidePageController.h
-//  TaQu
+//  ControllerKitDemo
 //
-//  Created by Soldier on 16/4/1.
-//  Copyright © 2016年 厦门海豹信息技术. All rights reserved.
+//  Created by Soldier on 2017/6/9.
+//  Copyright © 2017年 Shaojie Hong. All rights reserved.
 //
+
 
 #import "HBModelViewController.h"
 #import "HBSlidePageModel.h"
-#import "FDSlideBar.h"
+#import "HBSlideBar.h"
 #import "HBSlideTabItem.h"
 
 
@@ -24,7 +25,7 @@
 
 - (void)scrollWithContentOffsetY:(CGFloat)contentOffsetY offset:(CGFloat)offset; // offset 其它参数
 
-- (void)itemControllBeginPullDownRefreshing; //tab Controller 下拉刷新回调
+- (void)itemControllLoadNewData; //tab Controller 下拉刷新回调
 
 - (void)scrollViewDidScrollWithContentOffsetY:(CGFloat)contentOffsetY offset:(CGFloat)offset;
 
@@ -39,15 +40,12 @@
  * midel—>HBSlidePageModel cell->HBSlidePageCell
  */
 
-@interface HBSlidePageController : HBModelViewController<UICollectionViewDataSource, UICollectionViewDelegate, HBSlidePageDelegate> {
-    NSMutableArray *_tabItems;
-    FDSlideBar *_slideBar;
-}
+@interface HBSlidePageController : HBModelViewController<UICollectionViewDataSource, UICollectionViewDelegate, HBSlidePageDelegate>
 
 @property (nonatomic, strong) UICollectionView *mainColllectionView;
 @property (nonatomic, assign) NSInteger pageIndex;
 @property (nonatomic, strong) HBSlidePageModel *model;
-@property (nonatomic, strong) FDSlideBar *slideBar;
+@property (nonatomic, strong) HBSlideBar *slideBar;
 @property (nonatomic, strong) NSMutableArray *tabItems;
 @property (nonatomic, assign) BOOL isClickSlideBar; //通过点击切换页面
 
