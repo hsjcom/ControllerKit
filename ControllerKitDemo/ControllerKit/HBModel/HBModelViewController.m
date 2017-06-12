@@ -64,7 +64,7 @@
  处理Loading 等
  */
 - (void)modelDidStartLoad {
-//    [self showLoading:YES];
+    [self showLoading:YES];
 }
 
 
@@ -88,14 +88,14 @@
  加载失败更新
  */
 - (void)onLoadFailed {
-//    [self showLoading:NO];
+    [self showLoading:NO];
 }
 
 /**
  加载成功更新
  */
 - (void)onDataUpdated {
-//    [self showLoading:NO];
+    [self showLoading:NO];
     
 }
 

@@ -48,5 +48,22 @@
  */
 - (void)addNavRightBtn:(UIView *)btn;
 
+#pragma mark - Show View
+
+- (void)showLoading:(BOOL)show;
+
+- (void)showMsg:(NSString *)msg;
+
+- (void)showMsgOnWindows:(NSString *)msg;
+
+- (void)showIndicator:(NSString *)msg;
+
+- (void)showIndicatorOnWindows:(NSString *)msg;
+
+- (void)endIndicator;
+
+- (void)endIndicatorOnWindows;
+
+- (void)endIndicator:(NSString *)msg;
 
 @end
