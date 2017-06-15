@@ -62,6 +62,7 @@
 		B22763B31EE15F2100BF69B7 /* ControllerKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763B21EE15F2100BF69B7 /* ControllerKitDemoTests.m */; };
 		B22763BE1EE15F2100BF69B7 /* ControllerKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763BD1EE15F2100BF69B7 /* ControllerKitDemoUITests.m */; };
 		B22763D61EE1643C00BF69B7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B22763D21EE1643C00BF69B7 /* UIView+Extension.m */; };
+		B29C6FBB1EF23A8C00DAD3B5 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C6FBA1EF23A8C00DAD3B5 /* NSString+Extension.m */; };
 		FB0B0BA81EEBDFD600FE6130 /* HBSlidePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0B9D1EEBDFD600FE6130 /* HBSlidePageCell.m */; };
 		FB0B0BA91EEBDFD600FE6130 /* HBSlidePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0B9F1EEBDFD600FE6130 /* HBSlidePageController.m */; };
 		FB0B0BAA1EEBDFD600FE6130 /* HBSlidePageItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B0BA11EEBDFD600FE6130 /* HBSlidePageItemController.m */; };
@@ -194,6 +195,8 @@
 		B22763D11EE1643C00BF69B7 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		B22763D21EE1643C00BF69B7 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		B22763D81EE1647F00BF69B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B29C6FB91EF23A8C00DAD3B5 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		B29C6FBA1EF23A8C00DAD3B5 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		FB0B0B9C1EEBDFD600FE6130 /* HBSlidePageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageCell.h; sourceTree = "<group>"; };
 		FB0B0B9D1EEBDFD600FE6130 /* HBSlidePageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSlidePageCell.m; sourceTree = "<group>"; };
 		FB0B0B9E1EEBDFD600FE6130 /* HBSlidePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSlidePageController.h; sourceTree = "<group>"; };
@@ -515,6 +518,8 @@
 			isa = PBXGroup;
 			children = (
 				B22763D01EE1643C00BF69B7 /* Constant.h */,
+				B29C6FB91EF23A8C00DAD3B5 /* NSString+Extension.h */,
+				B29C6FBA1EF23A8C00DAD3B5 /* NSString+Extension.m */,
 				B22763D11EE1643C00BF69B7 /* UIView+Extension.h */,
 				B22763D21EE1643C00BF69B7 /* UIView+Extension.m */,
 			);
@@ -728,6 +733,7 @@
 				B200D9381EE8E96A00C47DF6 /* NSBundle+MJRefresh.m in Sources */,
 				B200D9341EE8E96A00C47DF6 /* MJRefreshNormalHeader.m in Sources */,
 				B200D9311EE8E96A00C47DF6 /* MJRefreshBackNormalFooter.m in Sources */,
+				B29C6FBB1EF23A8C00DAD3B5 /* NSString+Extension.m in Sources */,
 				B200D9541EE9514A00C47DF6 /* HBRefreshFooter.m in Sources */,
 				B200D9281EE8E96A00C47DF6 /* MJRefreshAutoFooter.m in Sources */,
 				B200D8C41EE57E9A00C47DF6 /* HBModel.m in Sources */,
