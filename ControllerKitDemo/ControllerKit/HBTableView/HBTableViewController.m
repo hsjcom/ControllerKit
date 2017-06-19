@@ -14,6 +14,34 @@
 #import "HBRefreshHeader.h"
 
 
+/*
+ 
+ //在相应的子类声明重写 HBTableViewDataSource
+ 
+ @interface TableViewDataSource : HBTableViewDataSource
+ 
+ @end
+ 
+ 
+ @implementation TableViewDataSource
+ 
+ 
+ //根据相应是数据类型返回需要的Cell
+ - (Class)tableView:(UITableView *)tableView cellClassForObject:(id)object {
+ if ([object isKindOfClass:[HBLayout class]]) {
+ 
+ return [HBTableViewCell class];
+ }
+ 
+ return [super tableView:tableView cellClassForObject:object];
+ }
+ 
+ @end
+ 
+ */
+
+
+
 @interface HBTableViewController ()
 
 @end
